@@ -68,7 +68,35 @@ int main() {
                 }
                 break;
             }
-                      
+
+
+
+
+
+
+
+
+
+            case 5: {
+                int totalNumSales = 0;
+                int totalItemsSold = 0;
+                for (int i = 0; i < numCustomers; i++) {
+                    totalNumSales += totalSales[i];
+                    totalItemsSold += numPurchases[i];
+                }
+                cout << "Summary Report" << endl;
+                cout << "----------------" << endl;
+
+cout << "Total Number of Customers: " << numCustomers << endl;
+                cout << "Total Number of Sales: " << totalNumSales << endl;
+                cout << "Total Number of Items Sold: " << totalItemsSold << endl;
+                break;
+            }
+
+            case 6: {
+                cout << "Exiting program..." << endl;
+                break;
+            }                      
         }
     } while (choice != 6);
     return 0;
