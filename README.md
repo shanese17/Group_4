@@ -1,3 +1,15 @@
+User Interface
+
+
+
+
+
+<img width="716" alt="Screenshot 2024-12-30 164949" src="https://github.com/user-attachments/assets/dc9d0dcb-706b-4ce6-af8b-3203c658a3fc" />
+
+
+
+
+
 **Sales Tracking Application**
 
 **Overview**
