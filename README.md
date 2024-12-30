@@ -1,5 +1,7 @@
 **Sales Tracking Application**
+
 **Overview**
+
 This C++ application is a console-based Sales Tracking System. It allows users to:
 
 1. Add customers to a system.
@@ -8,8 +10,11 @@ This C++ application is a console-based Sales Tracking System. It allows users t
 4. Search for customers by name or customer number.
 5. Generate a summary report of all customers and sales.
 6. Exit the application.
+   
 **Code Description
+
 Features**
+
 1. Adding Customers:
 
 i) Users can input customer details (name, sex, and address).
