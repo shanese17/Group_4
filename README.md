@@ -32,17 +32,22 @@ ii) The system tracks the total sales amount and the number of purchases for eac
 3. Viewing Customer Details:
 
 i) Displays a detailed sales report for each customer, including:
+
      Name, sex, and address.
+     
      Total sales amount.
+     
      Number of purchases.
+     
      Average sales amount per purchase.
+     
 4. Searching for Customers:
 
 i) Customers can be searched by:
 
       Customer Number: Directly fetches their details.
       
-         Name: Searches the customer list and displays matching details.
+      Name: Searches the customer list and displays matching details.
          
 5. Summary Report:
 
@@ -54,8 +59,11 @@ i) Summarizes overall statistics:
 6. Exit:
 
 i) Allows users to exit the application gracefully.
+
 **Highlights of the Code**
+
 **1 . Color-Coded User Interface**
+
 - ANSI escape codes are used to add colors to the console output for better readability:
     GREEN: Prompts for input.
     BLUE: Menus and section headers.
