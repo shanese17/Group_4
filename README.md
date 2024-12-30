@@ -18,12 +18,17 @@ Features**
 1. Adding Customers:
 
 i) Users can input customer details (name, sex, and address).
+
 ii) Each customer is assigned a unique number.
+
 iii) Customer data is stored in arrays.
+
 2. Recording Sales:
 
 i) Sales transactions can be recorded for existing customers using their customer numbers.
+
 ii) The system tracks the total sales amount and the number of purchases for each customer.
+
 3. Viewing Customer Details:
 
 i) Displays a detailed sales report for each customer, including:
@@ -34,11 +39,15 @@ i) Displays a detailed sales report for each customer, including:
 4. Searching for Customers:
 
 i) Customers can be searched by:
+
       Customer Number: Directly fetches their details.
+      
          Name: Searches the customer list and displays matching details.
+         
 5. Summary Report:
 
 i) Summarizes overall statistics:
+
      Total number of customers.
      Total sales amount.
      Total items sold.
