@@ -71,7 +71,57 @@ int main() {
 
 
 
-
+            case 3: {
+                cout << BLUE << "Customer Details and Sales Report" << RESET << endl;
+                cout << "-----------------------------------" << endl;
+                cout << "Customer Number | Name | Sex | Address | Total Sales | Num Purchases | Avg Sales" << endl;
+                for (int i = 0; i < numCustomers; i++) {
+                    cout << customerNumbers[i] << " | " << names[i] << " | " << sexes[i] << " | "
+                         << addresses[i] << " | " << totalSales[i] << " | " << numPurchases[i] << " | "
+                         << (numPurchases[i] > 0 ? (totalSales[i] / numPurchases[i]) : 0) << endl;
+                }
+                break;
+            }
+            case 4: {
+                int searchChoice;
+                cout << BLUE << "1. Search by Customer Number\n2. Search by Name" << RESET << endl;
+                cout << GREEN << "Enter your choice: " << RESET;
+                cin >> searchChoice;
+                if (searchChoice == 1) {
+                    int customerNumber;
+                    cout << GREEN << "Enter customer number: " << RESET;
+                    cin >> customerNumber;
+                    if (customerNumber > 0 && customerNumber <= numCustomers) {
+                        cout << "Customer found with details: " << endl;
+                        cout << "Name: " << names[customerNumber - 1] << endl;
+                        cout << "Sex: " << sexes[customerNumber - 1] << endl;
+                        cout << "Address: " << addresses[customerNumber - 1] << endl;
+                        cout << "Total Sales: " << totalSales[customerNumber - 1] << endl;
+                        cout << "Num Purchases: " << numPurchases[customerNumber - 1] << endl;
+                        cout << "Avg Sales: " << (numPurchases[customerNumber - 1] > 0 ? (totalSales[customerNumber - 1] / numPurchases[customerNumber - 1]) : 0) << endl;
+                    } else {
+                        cout << RED << "Invalid customer number." << RESET << endl;
+                    }
+                } else if (searchChoice == 2) {
+                    string name;
+                    cin.ignore(); // Clear the newline character from the input buffer
+                    cout << GREEN << "Enter customer name: " << RESET;
+                    getline(cin, name); // Use getline for searching
+                    bool found = false;
+                    for (int i = 0; i < numCustomers; i++) {
+                        if (names[i] == name) {
+                            cout << "Customer found with customer number " << customerNumbers[i] << endl;
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) {
+                        cout << RED << "Customer not found." << RESET << endl;
+                    }
+                }
+                break;
+            }
+            
 
 
 
